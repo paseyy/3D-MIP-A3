@@ -1,7 +1,7 @@
 function [H_new, v_new] = retessellate_mesh(v)
     % load the meshes
     H = load('lh.white.H.txt');
-    [v_white, f_white] = read_vtk('lh.white.vtk');
+    [v_white, ~] = read_vtk('lh.white.vtk');
     v_white_x = v_white(:, 1);
     v_white_y = v_white(:, 2);
     v_white_z = v_white(:, 3);

@@ -7,7 +7,7 @@ function A = create_laplacian(f, v)
     % distances = sparse(ii, jj, distances_vec);
     
     % convert distances to gaussian weight
-    std = mean(distances_vec)
+    std = mean(distances_vec);
     weights_vec = exp(-(distances_vec.^2) / (2 * std^2));
     weights = sparse(ii, jj, weights_vec, size(A,1), size(A,2));
 
