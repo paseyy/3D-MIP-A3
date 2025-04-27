@@ -24,16 +24,13 @@ end
 [v_ico, f_ico] = read_vtk('icosphere_mesh/icosphere_4.vtk');
 [H_ico, v_ico] = retessellate_mesh(v_ico);
 write_vtk('lh.ico_4.vtk', v_ico, f_ico, struct('H', H_ico));
-write_vtk('lh.ico_4.geom.vtk', v_ico, f_ico, struct('H', H_ico));
 
 % ICO 5
 [v_ico, f_ico] = read_vtk('icosphere_mesh/icosphere_5.vtk');
 [H_ico, v_ico] = retessellate_mesh(v_ico);
 write_vtk('lh.ico_5.vtk', v_ico, f_ico, struct('H', H_ico));
-write_vtk('lh.ico_5.geom.vtk', v_ico, f_ico, struct('H', H_ico));
 
 % ICO 6
 [v_ico, f_ico] = read_vtk('icosphere_mesh/icosphere_6.vtk');
 [H_ico, v_ico] = retessellate_mesh(v_ico);
 write_vtk('lh.ico_6.vtk', v_ico, f_ico, struct('H', H_ico));
-write_vtk('lh.ico_6.geom.vtk', v_ico, f_ico, struct('H', H_ico));
